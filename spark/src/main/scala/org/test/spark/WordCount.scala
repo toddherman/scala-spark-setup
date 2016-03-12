@@ -23,7 +23,7 @@ object WordCount {
     .reduceByKey(_ + _)
     .sortBy(_._2, false)
     .foreach(println)
-    // text file saving not working on local
+    // text file saving not working on local 
     //.saveAsTextFile("C:/Users/todd/workspace/test/devicewordcount.txt")
   }
 }
